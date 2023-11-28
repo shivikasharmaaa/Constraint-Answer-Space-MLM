@@ -1,3 +1,5 @@
+# Author: Shivika Sharma
+# 27 November 2023
 
 from my_model import custom_model
 answer_tokens = ['positive', 'negative']
@@ -13,7 +15,7 @@ print(f"\nInput Text: {sentence}")
 print(f"Class Labels: {answer_tokens}")
 print("-----------------------------")
 print("Output of model with simple answer tokens")
-print(f"\tOutput of forward pass: {model_no_map(inputs, 1)}")
+print(f"\tOutput of forward pass: {model_no_map(inputs, 0)}")
 print(f"\tClass Token Probabilities: {model_no_map.return_probs(inputs)}")
 print(f"\tPredicted Class Token: {model_no_map.return_prediction(inputs)}")
 
@@ -22,7 +24,7 @@ print("-----------------------------")
 lbl_dict = {lbl:mp_lbl for lbl,mp_lbl in zip(answer_tokens,c_tokens)}
 print(f"Mapping of class labels: {lbl_dict}")
 print("Output of model with mapped answer token set")
-print(f"\tOutput of forward pass: {model_map(inputs, 1)}")
+print(f"\tOutput of forward pass: {model_map(inputs, 0)}")
 print(f"\tClass Token Probabilities: {model_map.return_probs(inputs)}")
 print(f"\tPredicted Class Token: {model_map.return_prediction(inputs)}")
 print("-----------------------------")
