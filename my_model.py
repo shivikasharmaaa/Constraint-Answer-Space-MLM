@@ -54,9 +54,9 @@ class My_BERT(nn.Module):
 		token_probs = zip(self.answer_ids, answer_probs[0])
 		return self.tokenizer.convert_ids_to_tokens(max(token_probs, key=lambda x: x[1])[0])
 
-def custom_model(model_name, c_tokens=None):
+def custom_model(model_name, answer_tokens, c_tokens=None):
 	tokenizer = BertTokenizer.from_pretrained(model_name)
-	answer_tokens = ['favor', 'against', 'none']
+
 	if c_tokens is not None:
 		is_map = True
 	else:
