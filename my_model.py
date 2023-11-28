@@ -1,3 +1,6 @@
+# Author: Shivika Sharma
+# 27 November 2023
+
 import torch
 from transformers import BertForMaskedLM
 import torch.nn as nn
