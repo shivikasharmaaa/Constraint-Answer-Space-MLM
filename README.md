@@ -6,7 +6,8 @@ This code (my_model.py) can be used to implement such a model. Here, the forward
 Furthermore, to enhance the prediction accuracy these class tokens can further be represented by a set of similar tokens (such as ['positive', 'happy', 'optimistic], etc. for the 'positive' sentiment class. This code can further accommodate a similar use case as well.
 
 ## Output of Sample Main
-<img width="1022" alt="Screenshot 2023-11-28 at 10 43 14 AM" src="https://github.com/shivikasharmaaa/Constraint-Answer-Space-MLM/assets/91414321/a29931c0-4fd2-41e8-9aef-47050db55edb">
+<img width="957" alt="Screenshot 2023-11-28 at 12 34 56 PM" src="https://github.com/shivikasharmaaa/Constraint-Answer-Space-MLM/assets/91414321/2e6841e8-b323-4ea4-9b31-c5d7a71e8b45">
+
 
 
 ### Version Used
